@@ -21,9 +21,9 @@ class Main {
             vertColor = colors[ Math.floor( x/10 ) ];
             for( y in 0...70 ) p.setARGB( x, y, vertColor );
         }
-        p.gradientShape.triangle( 10, 10, 0xf0ffcf00, 60, 44, 0xf000cfFF, 24, 60, 0xf0cF00FF );
-        p.gradientShape.triangle( 22, 23, 0xccff0000, 70, 60, 0xcc0000FF, 28, 64, 0xcc00ff00 );
-        p.ansi.ansi_out( 1. );
+        p.gradientShape.triangle( 10, 10, 0xffffffff, 60, 44, 0xff000000, 24, 60, 0xff999999 );
+        //p.gradientShape.triangle( 22, 23, 0xcfcff0000, 70, 60, 0xcc0000FF, 28, 64, 0xcc00ff00 );
+        p.ansi.ansiSimple( 0.8 );
     }
 
 }
