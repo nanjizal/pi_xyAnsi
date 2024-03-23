@@ -9,3 +9,14 @@
 -dce full
 -cmd cd cpp/
 -cmd ./Main
+--next
+-cppia Main.cppia
+-cp src
+-lib ansi
+-lib justPath
+-lib format
+-lib iterMagic
+-lib pi_xy
+-main pi_xyAnsi.Main
+-dce full
+-cmd haxelib run hxcpp Main.cppia
